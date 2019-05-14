@@ -1,14 +1,47 @@
 <ion-header>
-  <ion-toolbar>
+    <ion-toolbar color="danger">
       <ion-buttons slot="start">
-          <ion-button (click)="home()">
-            <ion-icon slot="icon-only" name="home"></ion-icon>
-          </ion-button>
-        </ion-buttons>
-    <ion-title>terror</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content>
-
-</ion-content>
+        <ion-button (click)="home()">
+          <ion-icon slot="icon-only" name="home"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      <ion-title>
+        Terror
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+  
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <button (click)="silencio()">
+            <img src="/assets/imagenes/silencio.jpg" style="width : 100% ; height : 100%" ng-click="nextpage()">
+            Dead Silence
+          </button>
+        </ion-col>
+        <ion-col>
+          <button (click)="conjuro()">
+            <img src="/assets/imagenes/conjuro2.jpg" style="width : 100% ; height : 100%" ng-click="nextpage()">
+            El Conjuro 2
+          </button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <button (click)="ouija()">
+            <img src="/assets/imagenes/ouija.jpg" style="width : 100% ; height : 100%" ng-click="nextpage()">
+            Ouija
+          </button>
+        </ion-col>
+        <ion-col>
+          <button (click)="monja()">
+            <img src="/assets/imagenes/lamonja.jpg" style="width : 100% ; height : 100%" ng-click="nextpage()">
+            La monja
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  
+  </ion-content>

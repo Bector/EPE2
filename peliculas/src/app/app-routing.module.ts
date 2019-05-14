@@ -13,7 +13,15 @@ const routes: Routes = [
   { path: 'pantera', loadChildren: './pantera/pantera.module#PanteraPageModule' },
   { path: 'kingsman', loadChildren: './kingsman/kingsman.module#KingsmanPageModule' },
   { path: 'hormiga', loadChildren: './hormiga/hormiga.module#HormigaPageModule' },
-  { path: 'dbs', loadChildren: './dbs/dbs.module#DbsPageModule' }
+  { path: 'dbs', loadChildren: './dbs/dbs.module#DbsPageModule' },
+  { path: 'silencio', loadChildren: './silencio/silencio.module#SilencioPageModule' },
+  { path: 'monja', loadChildren: './monja/monja.module#MonjaPageModule' },
+  { path: 'ouija', loadChildren: './ouija/ouija.module#OuijaPageModule' },
+  { path: 'conjuro', loadChildren: './conjuro/conjuro.module#ConjuroPageModule' },
+  { path: 'escalofrios', loadChildren: './escalofrios/escalofrios.module#EscalofriosPageModule' },
+  { path: 'ready', loadChildren: './ready/ready.module#ReadyPageModule' },
+  { path: 'star', loadChildren: './star/star.module#StarPageModule' },
+  { path: 'harry', loadChildren: './harry/harry.module#HarryPageModule' }
 
 ];
 @NgModule({

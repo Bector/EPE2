@@ -15,6 +15,20 @@ export class FiccionPage implements OnInit {
     this.navctrl.navigateForward("tabs");
 
   }
+  star(){
+
+    this.navctrl.navigateForward('star');
+
+  }
+  ready(){
+    this.navctrl.navigateForward('ready');
+  }
+  escalofrio(){
+    this.navctrl.navigateForward('escalofrios');
+  }
+  harry(){
+    this.navctrl.navigateForward('harry');
+  }
 
   ngOnInit() {
   }

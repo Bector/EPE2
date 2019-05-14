@@ -15,6 +15,18 @@ export class TerrorPage implements OnInit {
     this.navctrl.navigateForward("tabs");
 
   }
+  monja(){
+    this.navctrl.navigateForward("monja");
+  }
+  silencio(){
+    this.navctrl.navigateForward("silencio");
+  }
+  ouija(){
+    this.navctrl.navigateForward("ouija");
+  }
+  conjuro(){
+    this.navctrl.navigateForward("conjuro");
+  }
 
   ngOnInit() {
   }
