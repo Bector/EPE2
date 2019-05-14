@@ -1,14 +1,47 @@
 <ion-header>
-  <ion-toolbar>
+    <ion-toolbar color="danger">
       <ion-buttons slot="start">
-          <ion-button (click)="home()">
-            <ion-icon slot="icon-only" name="home"></ion-icon>
-          </ion-button>
-        </ion-buttons>
-    <ion-title>otros</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content>
-
-</ion-content>
+        <ion-button (click)="home()">
+          <ion-icon slot="icon-only" name="home"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      <ion-title>
+        Accion
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+  
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <button (click)="bird()">
+            <img src="/assets/imagenes/bird.jpg" style="width : 100% ; height : 100%" ng-click="nextpage()">
+            Bird box
+          </button>
+        </ion-col>
+        <ion-col>
+          <button (click)="me()">
+            <img src="/assets/imagenes/me.jpg" style="width : 100% ; height : 100%" ng-click="nextpage()">
+            Me before you
+          </button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <button (click)="roma()">
+            <img src="/assets/imagenes/roma.jpg" style="width : 100% ; height : 100%" ng-click="nextpage()">
+            Roma
+          </button>
+        </ion-col>
+        <ion-col>
+          <button (click)="titanic()">
+            <img src="/assets/imagenes/titanic.jpg" style="width : 100% ; height : 100%" ng-click="nextpage()">
+            Titanic
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  
+  </ion-content>

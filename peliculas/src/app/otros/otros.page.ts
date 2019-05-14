@@ -16,6 +16,21 @@ export class OtrosPage implements OnInit {
 
   }
 
+  bird(){
+
+    this.navctrl.navigateForward('bird');
+
+  }
+  me(){
+    this.navctrl.navigateForward('me');
+  }
+  roma(){
+    this.navctrl.navigateForward('roma');
+  }
+  titanic(){
+    this.navctrl.navigateForward('titanic');
+  }
+
   ngOnInit() {
   }
 

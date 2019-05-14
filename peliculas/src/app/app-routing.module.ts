@@ -21,7 +21,11 @@ const routes: Routes = [
   { path: 'escalofrios', loadChildren: './escalofrios/escalofrios.module#EscalofriosPageModule' },
   { path: 'ready', loadChildren: './ready/ready.module#ReadyPageModule' },
   { path: 'star', loadChildren: './star/star.module#StarPageModule' },
-  { path: 'harry', loadChildren: './harry/harry.module#HarryPageModule' }
+  { path: 'harry', loadChildren: './harry/harry.module#HarryPageModule' },
+  { path: 'me', loadChildren: './me/me.module#MePageModule' },
+  { path: 'titanic', loadChildren: './titanic/titanic.module#TitanicPageModule' },
+  { path: 'bird', loadChildren: './bird/bird.module#BirdPageModule' },
+  { path: 'roma', loadChildren: './roma/roma.module#RomaPageModule' }
 
 ];
 @NgModule({
