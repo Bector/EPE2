@@ -1,61 +1,68 @@
 <ion-header>
-    <ion-toolbar color="danger">
-        <ion-buttons slot="start">
-            <ion-button (click)="home()">
-              <ion-icon slot="icon-only" name="home"></ion-icon>
-            </ion-button>
-          </ion-buttons>
-      <ion-title>
-        Accion
-      </ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-button (click)="home()">
+        <ion-icon slot="icon-only" name="home"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>
+      Accion
+    </ion-title>
+    <!--
+          <ion-buttons slot="end">
+          <ion-button (click)="">//Falta funcion para volver a "accion"
+            <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+     -->
+  </ion-toolbar>
+</ion-header>
 
 <ion-content>
 
   <ion-grid>
     <ion-row>
       <ion-col>
-        <button (click)="Avengers">
-            <img src="/assets/imagenes/AvengersEndgame.jpg" style="width : 100% ; height : 100%" ng-click="nextpage()">
-            Avengers: Endgame 
+        <button (click)="Avengers()">
+          <img src="/assets/imagenes/AvengersEndgame.jpg" style="width : 100% ; height : 100%" ng-click="nextpage()">
+          Avengers: Endgame
         </button>
       </ion-col>
       <ion-col>
-          <button (click)="dbs">
-              <img src="/assets/imagenes/dbs.jpeg" style="width : 100% ; height : 100%" ng-click="nextpage()">
-              Dragon ball super : Broly
-          </button>
-        </ion-col>
+        <button (click)="dbs">
+          <img src="/assets/imagenes/dbs.jpeg" style="width : 100% ; height : 100%" ng-click="nextpage()">
+          Dragon ball super : Broly
+        </button>
+      </ion-col>
     </ion-row>
     <ion-row>
-        <ion-col>
-          <button (click)="hormiga">
-              <img src="/assets/imagenes/hormiga.jpg" style="width : 100% ; height : 100%" ng-click="nextpage()">
-              Ant-man and the wasp
-          </button>
-        </ion-col>
-        <ion-col>
-            <button (click)="kingsman">
-                <img src="/assets/imagenes/kingsman2.jpg" style="width : 100% ; height : 100%" ng-click="nextpage()">
-                Kingsman: el circulo dorado
-            </button>
-          </ion-col>
-      </ion-row>
-      <ion-row>
-          <ion-col>
-            <button (click)="thor">
-                <img src="/assets/imagenes/thor.jpg" style="width : 100% ; height : 100%" ng-click="nextpage()">
-                thor Ragnarok
-            </button>
-          </ion-col>
-          <ion-col>
-              <button (click)="pantera">
-                  <img src="/assets/imagenes/pantera.jpg" style="width : 100% ; height : 100%" ng-click="nextpage()">
-                  Pantera negra
-              </button>
-            </ion-col>
-        </ion-row>
+      <ion-col>
+        <button (click)="hormiga">
+          <img src="/assets/imagenes/hormiga.jpg" style="width : 100% ; height : 100%" ng-click="nextpage()">
+          Ant-man and the wasp
+        </button>
+      </ion-col>
+      <ion-col>
+        <button (click)="kingsman">
+          <img src="/assets/imagenes/kingsman2.jpg" style="width : 100% ; height : 100%" ng-click="nextpage()">
+          Kingsman: el circulo dorado
+        </button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <button (click)="thor">
+          <img src="/assets/imagenes/thor.jpg" style="width : 100% ; height : 100%" ng-click="nextpage()">
+          thor Ragnarok
+        </button>
+      </ion-col>
+      <ion-col>
+        <button (click)="pantera">
+          <img src="/assets/imagenes/pantera.jpg" style="width : 100% ; height : 100%" ng-click="nextpage()">
+          Pantera negra
+        </button>
+      </ion-col>
+    </ion-row>
   </ion-grid>
 
 </ion-content>

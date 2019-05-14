@@ -15,6 +15,11 @@ export class AccionPage implements OnInit {
     this.navctrl.navigateForward("tabs");
 
   }
+  Avengers(){
+
+    this.navctrl.navigateForward('avengers');
+
+  }
 
   ngOnInit() {
   }
