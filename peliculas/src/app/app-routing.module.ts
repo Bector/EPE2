@@ -8,7 +8,12 @@ const routes: Routes = [
   { path: 'accion', loadChildren: './accion/accion.module#AccionPageModule' },
   { path: 'terror', loadChildren: './terror/terror.module#TerrorPageModule' },
   { path: 'ficcion', loadChildren: './ficcion/ficcion.module#FiccionPageModule' },
-  { path: 'otros', loadChildren: './otros/otros.module#OtrosPageModule' },  { path: 'avengers', loadChildren: './avengers/avengers.module#AvengersPageModule' }
+  { path: 'otros', loadChildren: './otros/otros.module#OtrosPageModule' },  { path: 'avengers', loadChildren: './avengers/avengers.module#AvengersPageModule' },
+  { path: 'thor', loadChildren: './thor/thor.module#ThorPageModule' },
+  { path: 'pantera', loadChildren: './pantera/pantera.module#PanteraPageModule' },
+  { path: 'kingsman', loadChildren: './kingsman/kingsman.module#KingsmanPageModule' },
+  { path: 'hormiga', loadChildren: './hormiga/hormiga.module#HormigaPageModule' },
+  { path: 'dbs', loadChildren: './dbs/dbs.module#DbsPageModule' }
 
 ];
 @NgModule({

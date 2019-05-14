@@ -20,8 +20,27 @@ export class AccionPage implements OnInit {
     this.navctrl.navigateForward('avengers');
 
   }
+  hormiga(){
+    this.navctrl.navigateForward('hormiga');
+  }
+  pantera(){
+    this.navctrl.navigateForward('pantera');
+  }
+  thor(){
+    this.navctrl.navigateForward('thor');
+  }
+  dbs(){
+    this.navctrl.navigateForward('dbs');
+  }
+  kingsman(){
+    this.navctrl.navigateForward('kingsman');
+  }
+
+
 
   ngOnInit() {
+
   }
+    
 
 }
