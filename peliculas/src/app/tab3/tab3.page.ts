@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import {NavController} from '@ionic/angular';
+import {IonContent} from '@ionic/angular';
 
 @Component({
   selector: 'app-tab3',
@@ -7,6 +8,7 @@ import {NavController} from '@ionic/angular';
   styleUrls: ['tab3.page.scss']
 })
 export class Tab3Page {
+  @ViewChild(IonContent) content:IonContent;
 
   constructor(public navctrl : NavController){}
 
@@ -35,6 +37,25 @@ export class Tab3Page {
   }
   vikings(){
     this.navctrl.navigateForward("vikings");
+  }
+  logScrollStart(){
+    console.log("logScrollStart : When Scroll Starts");
+  }
+ 
+  logScrolling(){
+    console.log("logScrolling : When Scrolling");
+  }
+ 
+  logScrollEnd(){
+    console.log("logScrollEnd : When Scroll Ends");
+  }
+ 
+  ScrollToBottom(){
+    this.content.scrollToBottom(1500);
+  }
+ 
+  ScrollToTop(){
+    this.content.scrollToTop(1500);
   }
 }
 
