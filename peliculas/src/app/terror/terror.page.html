@@ -11,7 +11,17 @@
     </ion-toolbar>
   </ion-header>
   
-  <ion-content>
+  <ion-content
+  [scrollEvents]="true"
+  (ionScrollStart)="logScrollStart()"
+  (ionScroll)="logScrolling($event)"
+  (ionScrollEnd)="logScrollEnd()">
+
+  <ion-fab vertical="top" horizontal="end" slot="fixed">
+      <ion-fab-button (click)="ScrollToBottom()" color="dark">
+        <ion-icon name="arrow-down"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
   
     <ion-grid>
       <ion-row>
@@ -43,5 +53,11 @@
         </ion-col>
       </ion-row>
     </ion-grid>
+
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+        <ion-fab-button (click)="ScrollToTop()" color="dark">
+          <ion-icon name="arrow-up"></ion-icon>
+        </ion-fab-button>
+      </ion-fab>
   
   </ion-content>
