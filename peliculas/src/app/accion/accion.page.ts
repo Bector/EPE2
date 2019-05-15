@@ -15,6 +15,11 @@ export class AccionPage implements OnInit {
     this.navctrl.navigateForward("tabs");
 
   }
+  atras(){
+
+    this.navctrl.navigateForward("tabs/tab2");
+
+  }
   Avengers(){
 
     this.navctrl.navigateForward('avengers');

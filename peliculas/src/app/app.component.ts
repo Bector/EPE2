@@ -16,6 +16,16 @@ export class AppComponent {
       icon:'home'
     },
     {
+      title:'Peliculas',
+      url:'/tabs/tab2',
+      icon:'film'
+    },
+    {
+      title:'Series',
+      url:'/tabs/tab3',
+      icon:'tv'
+    },
+    {
       title:'Acerca de',
       url:'/acerca-de',
       icon:'beer'

@@ -15,6 +15,11 @@ export class TerrorPage implements OnInit {
     this.navctrl.navigateForward("tabs");
 
   }
+  atras(){
+
+    this.navctrl.navigateForward("tabs/tab2");
+
+  }
   monja(){
     this.navctrl.navigateForward("monja");
   }
