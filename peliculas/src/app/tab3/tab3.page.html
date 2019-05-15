@@ -4,9 +4,70 @@
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-title>
-      Anime
+      Series
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <button (click)="got()">
+          <img src="/assets/imagenes/got.jpg" style="width : 100% ; height : 100%" ng-click="nextpage()">
+          Game of thrones
+        </button>
+      </ion-col>
+      <ion-col>
+        <button (click)="mrrobot()">
+          <img src="/assets/imagenes/mrrobot.jpg" style="width : 100% ; height : 100%" ng-click="nextpage()">
+          MR. robot
+        </button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <button (click)="cobrakai()">
+          <img src="/assets/imagenes/cobrakai.jpg" style="width : 100% ; height : 100%" ng-click="nextpage()">
+          Cobra kai
+        </button>
+      </ion-col>
+      <ion-col>
+        <button (click)="the100()">
+          <img src="/assets/imagenes/the100.jpg" style="width : 100% ; height : 100%" ng-click="nextpage()">
+          The 100
+        </button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <button (click)="sherlock()">
+          <img src="/assets/imagenes/sherlock.jpg" style="width : 100% ; height : 100%" ng-click="nextpage()">
+          Sherlock
+        </button>
+      </ion-col>
+      <ion-col>
+        <button (click)="breakingbad()">
+          <img src="/assets/imagenes/breakingbad.jpg" style="width : 100% ; height : 100%" ng-click="nextpage()">
+          Breaking bad
+        </button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <button (click)="house()">
+          <img src="/assets/imagenes/house.jpg" style="width : 100% ; height : 100%" ng-click="nextpage()">
+          Dr. house
+        </button>
+      </ion-col>
+      <ion-col>
+        <button (click)="vikings()">
+          <img src="/assets/imagenes/vikings.jpg" style="width : 100% ; height : 100%" ng-click="nextpage()">
+          Vikings
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
