@@ -25,7 +25,8 @@ const routes: Routes = [
   { path: 'me', loadChildren: './me/me.module#MePageModule' },
   { path: 'titanic', loadChildren: './titanic/titanic.module#TitanicPageModule' },
   { path: 'bird', loadChildren: './bird/bird.module#BirdPageModule' },
-  { path: 'roma', loadChildren: './roma/roma.module#RomaPageModule' }
+  { path: 'roma', loadChildren: './roma/roma.module#RomaPageModule' },
+  { path: 'acerca-de', loadChildren: './acerca-de/acerca-de.module#AcercaDePageModule' }
 
 ];
 @NgModule({

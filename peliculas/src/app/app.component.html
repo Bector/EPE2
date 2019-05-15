@@ -8,7 +8,12 @@
       </ion-header>
 
       <ion-content padding>
-        
+        <ion-menu-toggle *ngFor="let p of appPage">
+          <ion-item [routerLink]="p.url" [routerDirection]="'root'">
+            <ion-icon slot="start" [name]="p.icon"></ion-icon>
+            <ion-label>{{p.title}}</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
       </ion-content>
 
     </ion-menu>
