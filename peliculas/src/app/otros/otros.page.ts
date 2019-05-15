@@ -17,6 +17,11 @@ export class OtrosPage implements OnInit {
     this.navctrl.navigateForward("tabs");
 
   }
+  atras(){
+
+    this.navctrl.navigateForward("tabs/tab2");
+
+  }
 
   bird(){
 
