@@ -10,5 +10,29 @@
 </ion-header>
 
 <ion-content>
-
-</ion-content>
+   
+  
+    
+  
+   
+  
+    
+  
+  
+    
+  
+    
+    
+  
+    <!-- fab placed in the center of the content with a list on each side -->
+    <ion-fab vertical="top" horizontal="end" slot="fixed">
+      <ion-fab-button >
+        <ion-icon name="arrow-dropleft" > </ion-icon>
+      </ion-fab-button>
+      <ion-fab-list side="start">
+        <ion-fab-button color="medium" onclick="window.open('http://facebook.com','_system','location=yes')"><ion-icon name="logo-facebook" color="dark"></ion-icon></ion-fab-button>     
+        <ion-fab-button onclick="window.open('http://twitter.com','_system','location=yes')"><ion-icon name="logo-twitter"></ion-icon></ion-fab-button>     
+        <ion-fab-button onclick="window.open('http://instagram.com','_system','location=yes')"><ion-icon name="logo-instagram"></ion-icon></ion-fab-button>
+      </ion-fab-list>
+    </ion-fab>
+  </ion-content>

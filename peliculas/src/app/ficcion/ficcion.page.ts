@@ -15,6 +15,11 @@ export class FiccionPage implements OnInit {
     this.navctrl.navigateForward("tabs");
 
   }
+  atras(){
+
+    this.navctrl.navigateForward("tabs/tab2");
+
+  }
   star(){
 
     this.navctrl.navigateForward('star');

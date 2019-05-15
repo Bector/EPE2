@@ -1,17 +1,33 @@
 <ion-header>
   <ion-toolbar color="danger">
+
     <ion-buttons slot="start">
-      <ion-button (click)="home()">
-        <ion-icon slot="icon-only" name="home"></ion-icon>
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+
+    <ion-buttons slot="end">
+      <ion-button (click)="atras()">
+        <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
       </ion-button>
     </ion-buttons>
+
     <ion-title>
       Accion
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content
+[scrollEvents]="true"
+  (ionScrollStart)="logScrollStart()"
+  (ionScroll)="logScrolling($event)"
+  (ionScrollEnd)="logScrollEnd()">
+
+  <ion-fab vertical="top" horizontal="end" slot="fixed">
+      <ion-fab-button (click)="ScrollToBottom()" color="dark">
+        <ion-icon name="arrow-down"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
 
   <ion-grid>
     <ion-row>
@@ -57,5 +73,11 @@
       </ion-col>
     </ion-row>
   </ion-grid>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+      <ion-fab-button (click)="ScrollToTop()" color="dark">
+        <ion-icon name="arrow-up"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
 
 </ion-content>

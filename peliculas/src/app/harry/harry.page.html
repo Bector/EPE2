@@ -1,20 +1,16 @@
 <ion-header>
-    <ion-toolbar color="danger">
-        <ion-buttons slot="start">
-          <ion-button (click)="home()">
-            <ion-icon slot="icon-only" name="home"></ion-icon>
-          </ion-button>
-        </ion-buttons>
-      <ion-title>Harry potter y el prisionero de azkaban</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  
-  <ion-content>
-    <ion-grid>
-      <ion-row>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/V9FN5uTdnD0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </ion-row>
-    </ion-grid>
-    <ion-button color="danger" (click)="atras()">Atras</ion-button>
-  </ion-content>
-  
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Harry potter y el prisionero de azkaban</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="black">
+  <iframe style="margin-top:40%" width="auto" height="auto" src="https://www.youtube.com/embed/V9FN5uTdnD0" frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  <ion-button color="danger" expand="full" (click)="atras()">Atras</ion-button>
+
+</ion-content>

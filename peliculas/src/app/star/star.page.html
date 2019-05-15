@@ -1,20 +1,16 @@
 <ion-header>
   <ion-toolbar color="danger">
     <ion-buttons slot="start">
-      <ion-button (click)="home()">
-        <ion-icon slot="icon-only" name="home"></ion-icon>
-      </ion-button>
+      <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-title>Star wars: the las jedi</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <ion-grid>
-    <ion-row>
-    </ion-row>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/8vZb-NKekxo" frameborder="0"
-      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </ion-grid>
-  <ion-button color="danger" (click)="atras()">Atras</ion-button>
+<ion-content color="black">
+  <iframe style="margin-top:40%" width="auto" height="auto" src="https://www.youtube.com/embed/8vZb-NKekxo" frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  <ion-button color="danger" expand="full" (click)="atras()">Atras</ion-button>
+
 </ion-content>
