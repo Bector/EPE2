@@ -21,9 +21,9 @@
    <img src="film.svg" width="30" height="30">
    <h1>Imagenes</h1>
    <p>Algunas imagenes utilizadas en nuetra aplicacion</p>
-   <img src="cobrakai.jpg" width="100" height="100">
-   <img src="hormiga.jpg" width="100" height="100">
-   <img src="thor.jpg" width="100" height="100">
+   <div style="padding:1px;"><img src="cobrakai.jpg" width="200" height="250"></div>
+   <div><img src="hormiga.jpg" width="200" height="250"></div>
+   <div><img src="thor.jpg" width="200" height="250"></div>
     
   </body>
   </html>
