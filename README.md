@@ -13,8 +13,9 @@
     <div>
       <img src="ip.jpg" width="250" height="250">
     </div>
-    
-    
+   <h1>Iconos</h1>
+   <p>Iconos utilizados en nuetra aplicacion</p>
+   <img src=>
     
   </body>
   </html>
