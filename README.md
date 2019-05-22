@@ -15,7 +15,7 @@
     </div>
    <h1>Iconos</h1>
    <p>Iconos utilizados en nuetra aplicacion</p>
-   <img src="beer.svg">
+   <img src="beer.svg" width="16" height="16">
     
   </body>
   </html>
