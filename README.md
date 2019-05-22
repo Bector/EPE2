@@ -19,6 +19,12 @@
    <img src="tv.svg" width="30" height="30">
    <img src="home.svg" width="30" height="30">
    <img src="film.svg" width="30" height="30">
+   <h1>Imagenes</h1>
+   <p>Algunas imagenes utilizadas en nuetra aplicacion</p>
+   <img src="beer.svg" width="30" height="30">
+   <img src="tv.svg" width="30" height="30">
+   <img src="home.svg" width="30" height="30">
+   <img src="film.svg" width="30" height="30">
     
   </body>
   </html>
