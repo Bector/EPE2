@@ -15,7 +15,10 @@
     </div>
    <h1>Iconos</h1>
    <p>Iconos utilizados en nuetra aplicacion</p>
-   <img src="beer.svg" width="16" height="16">
+   <img src="beer.svg" width="30" height="30">
+   <img src="tv.svg" width="30" height="30">
+   <img src="home.svg" width="30" height="30">
+   <img src="flim.svg" width="30" height="30">
     
   </body>
   </html>
