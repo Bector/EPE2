@@ -10,13 +10,55 @@
 </ion-header>
 
 <ion-content>
-<ion-grid>
-  <ion-row>
-      <button (click)="HojaDeAccion()"><img
-        src="https://www.elsotanoperdido.com/images/EntradillasExtra/RedesSociales_Entra.jpg">Redes Sociales</button>
- </ion-row>
-</ion-grid> 
-<!-- fab placed in the center of the content with a list on each side 
+  <ion-grid>
+    <ion-row>
+      <button (click)="HojaDeAccion()"><img src="https://www.elsotanoperdido.com/images/EntradillasExtra/RedesSociales_Entra.jpg">Redes
+        Sociales</button>
+    </ion-row>
+    <ion-row>
+      <ion-card>
+        <ion-card-header>
+          <img src="/assets/imagenes/dbs.jpeg">
+          <ion-card-title>Dragon Ball super Broly</ion-card-title>
+          <h3>Mostrar mas..</h3>
+          <ion-toggle [(ngModel)]="toggleValue" color="danger"></ion-toggle>
+        </ion-card-header>
+
+        <ion-card-content>
+          <p *ngIf="toggleValue">
+            Después de disputarse el Torneo de la Fuerza,
+            la Tierra se encuentra en paz.
+            Goku al darse cuenta de que en el universo aún hay personas extremadamente fuertes,
+            continúa entrenando para volverse más fuerte. Pero un día, Freezer aparece en la Tierra con un misterioso
+            saiyajin llamado Broly, el cuál enfrenta a Goku y Vegeta.
+          </p>
+        </ion-card-content>
+      </ion-card>
+    </ion-row>
+    <ion-row>
+      <ion-card>
+        <ion-card-header>
+          <img src="/assets/imagenes/star.jpg">
+          <ion-card-title>Star Wars the last jedi</ion-card-title>
+          <h3>Mostrar mas..</h3>
+          <ion-toggle [(ngModel)]="toggleValue2" color="danger"></ion-toggle>
+        </ion-card-header>
+
+        <ion-card-content>
+          <p *ngIf="toggleValue2">
+              Hace mucho tiempo en una galaxia muy, muy lejana 
+              La primera orden impera. Luego de diezmar a la pacífica República, 
+              el Líder Supremo Snoke ahora envía a sus despiadadas legiones a asumir el control militar de la galaxia. 
+              Solo la general Leia Organa y su grupo de combatientes de la resistencias se oponen a la creciente tiranía, 
+              convencidos de que el Maestro Jedi Luke Skywalker regresará y restaurará la chispa de esperanza en la lucha. 
+              Pero la Resistencia ha sido expuesta. Mientras la Primera Orden se dirige hacia la base rebelde, 
+              los valientes héroes organizan un desesperado escape.
+          </p>
+        </ion-card-content>
+      </ion-card>
+    </ion-row>
+  </ion-grid>
+  <!-- fab placed in the center of the content with a list on each side 
     <ion-fab vertical="top" horizontal="end" slot="fixed">
       <ion-fab-button >
         <ion-icon name="arrow-dropleft" > </ion-icon>
@@ -26,5 +68,5 @@
         <ion-fab-button onclick="window.open('http://twitter.com','_system','location=yes')"><ion-icon name="logo-twitter"></ion-icon></ion-fab-button>     
         <ion-fab-button onclick="window.open('http://instagram.com','_system','location=yes')"><ion-icon name="logo-instagram"></ion-icon></ion-fab-button>
       </ion-fab-list>
-    </ion-fab>
-  </ion-content>-->
+    </ion-fab>-->
+</ion-content>

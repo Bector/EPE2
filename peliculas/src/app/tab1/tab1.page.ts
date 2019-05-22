@@ -10,6 +10,9 @@ import { ActionSheetController } from '@ionic/angular';
 export class Tab1Page {
   constructor(public actionSheetController: ActionSheetController) { }
 
+  toggleValue: boolean=false;
+  toggleValue2: boolean=false;
+
   async HojaDeAccion() {
     const actionSheet = await this.actionSheetController.create({
       header: 'Redes Sociales',
